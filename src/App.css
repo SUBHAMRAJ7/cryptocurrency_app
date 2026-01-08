@@ -16,7 +16,8 @@ h1 {
 
 .coin {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 15px;
   align-items: center;
   background-color: #161b22;
   padding: 18px 25px;
@@ -50,4 +51,35 @@ h1 {
   outline: none;
   font-size: 15px;
 }
+
+@media (max-width: 768px) {
+  .coin {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    padding: 16px;
+  }
+
+  .coin img {
+    margin-bottom: 10px;
+  }
+
+  .coin h3 {
+    width: 100%;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .coin p {
+    width: 100%;
+    margin: 4px 0;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .search {
+    width: 90%;
+  }
+}
+
 
